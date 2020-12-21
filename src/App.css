@@ -1,38 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:ital@1&display=swap");
+
+* {
+  box-sizing: border-box;
+  outline: 0;
+  margin: 0;
+}
+
+html {
+  font-family: Titillium Web, Poppins, Roboto, Arial, Helvetica, sans-serif;
+  overflow: hidden;
+}
+
+.Content {
+  position: absolute;
+  left: 50px;
+}
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media screen and (max-width: 800px) {
+  html {
+    overflow: scroll;
   }
-  to {
-    transform: rotate(360deg);
+  .App {
+    display: flex;
+    flex-direction: column;
+  }
+  .Content {
+    position: absolute;
+    left: 0;
   }
 }

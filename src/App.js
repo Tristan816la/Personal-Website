@@ -1,23 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Cover from "./Pages/Cover/Cover";
+import About from "./Pages/About/About";
+import Sidebar from "./Components/Sidebar";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
+import Project from "./Pages/Project/Project";
+import Contact from "./Pages/Contact/Contact";
+import axios from "axios";
+axios.defaults.baseURL = "https://chatbot-tristan.herokuapp.com";
 
 function App() {
+  useEffect(() => {
+    AOS.init({
+      duration: 500,
+      easing: "linear",
+    });
+  }, []);
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Sidebar className="Sidebar"></Sidebar>
+      <div className="Content">
+        <Cover></Cover>
+        <About></About>
+        <Project></Project>
+        <Contact></Contact>
+      </div>
     </div>
   );
 }
