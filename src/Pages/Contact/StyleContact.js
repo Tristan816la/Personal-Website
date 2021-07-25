@@ -6,7 +6,6 @@ export const ContactWrapper = styled.div`
   grid-template-columns: 3fr 2fr;
   background-color: ${darkGray};
   ${mobile} {
-    padding-top: 200px;
     grid-template-columns: 1fr;
   }
 `;
@@ -19,7 +18,7 @@ export const ContactFirstCol = styled.div`
 `;
 
 export const Resume = styled.img`
-  width: 85%;
+  width: 90%;
   filter: brightness(90%);
   border-radius: 5px;
   &:hover {

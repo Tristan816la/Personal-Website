@@ -10,6 +10,7 @@ import {
 } from "./StyleContact";
 import resume from "../../images/resume.png";
 import downloadIcon from "../../images/downloadicon.svg";
+import { BgTag, BgTag2 } from "../../shared/Tag";
 
 const Contact = () => {
   const [hover, setHover] = useState(false);
@@ -17,7 +18,7 @@ const Contact = () => {
     <>
       <ContactWrapper id="contact">
         <ContactFirstCol>
-          <a href="https://drive.google.com/file/d/1lhcIkM-QjFKwI7y0Dh1HpC6RqD4cUk3u/view?usp=sharing">
+          <a href="Resume.pdf" download>
             <div
               onMouseOver={() => setHover(true)}
               onMouseLeave={() => setHover(false)}
@@ -35,8 +36,12 @@ const Contact = () => {
         </ContactFirstCol>
 
         <ContactSecondCol>
-          <h1 data-aos="fade-in">Contact Me</h1>
+          <h1 data-aos="fade-in">
+            <BgTag>{"<h2>"}</BgTag>Contact Me
+            <BgTag2>{"</h2>"}</BgTag2>
+          </h1>
           <LinkWrapper data-aos="fade-in">
+            <BgTag>{"<p>"}</BgTag>
             <div>Email: {"  "}tristanq816@gmail.com</div>
             <div>
               GitHub:{"  "}
@@ -50,6 +55,7 @@ const Contact = () => {
                 https://www.linkedin.com/in/tristanque2000/
               </a>
             </div>
+            <BgTag2>{"</p>"}</BgTag2>
           </LinkWrapper>
         </ContactSecondCol>
       </ContactWrapper>

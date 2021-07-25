@@ -193,7 +193,7 @@ const Sidebar = () => {
           </Link>
           <Link to="project" smooth={true}>
             <SideBarItem
-              item="My Projects"
+              item="Project & Experiences"
               itemImg={ProjectIcon}
               hover={projectHover}
               onMouseOver={() => handleMouseOver("project")}

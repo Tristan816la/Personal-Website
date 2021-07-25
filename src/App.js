@@ -12,10 +12,14 @@ axios.defaults.baseURL = "https://chatbot-tristan.herokuapp.com";
 
 function App() {
   useEffect(() => {
+    const wakeup = async () => {
+      await axios.get("/");
+    };
     AOS.init({
       duration: 500,
       easing: "linear",
     });
+    wakeup();
   }, []);
 
   return (

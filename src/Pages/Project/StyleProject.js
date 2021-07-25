@@ -6,32 +6,33 @@ export const ProjectWrapper = styled.div`
   background: ${darkGray};
   display: flex;
   flex-direction: column;
-  align-items: center;
   ${mobile} {
     padding-top: 50px;
+    padding-left: 25px;
   }
 `;
 
 export const ProjectTitle = styled.h1`
-  color: ${pink};
-  font-size: 40px;
-  margin-top: 30px;
-  transform: rotate(-8deg) skew(-10deg);
+  display: none;
+  ${mobile} {
+    display: block;
+    color: ${pink};
+    font-size: 35px;
+    margin-top: 30px;
+    transform: rotate(-8deg) skew(-10deg);
+    margin-bottom: 30px;
+  }
 `;
 
 export const Cards = styled.div`
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   ${mobile} {
-    grid-template-columns: 1fr;
-    row-gap: 30px;
-    width: 100%;
+    grid-template-columns: 1fr 1fr;
     place-items: center;
+    width: 100%;
   }
-  column-gap: 10px;
-  margin-top: 40px;
   width: 80%;
-  min-height: 70vh;
 `;
 
 export const Card = styled.div`
@@ -52,12 +53,12 @@ export const Card = styled.div`
 `;
 
 export const CardContainer = styled.div`
-  width: 350px;
+  width: 315px;
   height: 250px;
   ${mobile} {
-    width: 250px;
-    height: 230px;
-    font-size: 12px;
+    height: 220px;
+    font-size: 10px;
+    width: 48vw;
   }
 
   &:hover ${Card} {

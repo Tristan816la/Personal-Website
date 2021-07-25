@@ -13,7 +13,7 @@ import {
   SendButton,
   ContactMe,
 } from "./StyleCover";
-
+import { BgTag, BgTag2 } from "../../shared/Tag";
 import Dropdown from "../../Components/Dropdown";
 import sendIcon from "../../images/sendIcon.svg";
 import { Link, scroller } from "react-scroll";
@@ -30,7 +30,6 @@ const Cover = () => {
       type: "ai",
     },
   ]);
-  console.log(chats);
   const handlePrompt = () => {
     if (!value.trim().length) handleOpen();
     else handleClose();
@@ -78,13 +77,18 @@ const Cover = () => {
       <CoverWrapper id="home">
         <CoverFirstCol>
           <CoverTitle>
+            <BgTag ml={-15}>{"<title>"}</BgTag>
+            <BgTag>{"<h1>"}</BgTag>
             Hi, <br /> I'm <CoverName>Tristan</CoverName>, <br /> an enthusiast
-            of web development and machine learning.
+            of web development and machine learning. <BgTag2>{"</h1>"}</BgTag2>
           </CoverTitle>
 
           <Link to="contact" smooth={true}>
             <ContactMe>Contact Me</ContactMe>
           </Link>
+          <BgTag mt={25} ml={-15}>
+            {"</title>"}
+          </BgTag>
         </CoverFirstCol>
 
         <CoverSecondCol>

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Fragment } from "react";
 import {
   Cards,
   ProjectTitle,
@@ -16,15 +16,35 @@ import stylisticucla from "../../images/stylisticucla.png";
 import hackerhub from "../../images/hackerhub.png";
 import toposort from "../../images/toposort.png";
 import minirougue from "../../images/minirougue.png";
+import embark from "../../images/embark.png";
+import compined from "../../images/compined.png";
+import connection from "../../images/connection.png";
+import { useWindowSize } from "../../shared/Hook";
+import { BgTag, BgTag2 } from "../../shared/Tag";
 
 const projects = [
+  {
+    title: "Embark",
+    description:
+      "A student-help-student platform that aims to provide the best industry resources for UCLA students, tech-leaded by me",
+    image: embark,
+    techstack: "React, MongoDB, Express",
+    link: "https://github.com/ucladevx/embark-frontend",
+  },
+  {
+    title: "Compined",
+    description:
+      "A sign-up free platform with full-chatting experiences cofounded by me and Tony",
+    image: compined,
+    link: "https://compined.com",
+    techstack: "React, React Native, Socket.io",
+  },
   {
     title: "Twain",
     description:
       "A browser extension for Google calendar that will automatically schedule tasks in available calendar slots",
     image: twain,
-    link:
-      "https://chrome.google.com/webstore/detail/twain/cmljiidokkhmheonmpfciinfdonkimop/related",
+    link: "https://chrome.google.com/webstore/detail/twain/cmljiidokkhmheonmpfciinfdonkimop/related",
     techstack: "React, Styled Components",
   },
   {
@@ -40,8 +60,7 @@ const projects = [
     description:
       "An AI to combine features of different images and achieve artistic effects",
     image: stylisticucla,
-    link:
-      "https://github.com/Tristan816la/Neural-Style-Transfer-Stylistic-UCLA",
+    link: "https://github.com/Tristan816la/Neural-Style-Transfer-Stylistic-UCLA",
     techstack: "Python, Jupyter Notebook, Tensorflow",
   },
   {
@@ -53,7 +72,7 @@ const projects = [
     techstack: "Firebase, Express, React, Node",
   },
   {
-    title: "Topo Sort Git Commits",
+    title: "TopoGit",
     description:
       "A Python Script to create a topological ordering of Git commits without using Git commands",
     image: toposort,
@@ -61,40 +80,57 @@ const projects = [
     techstack: "Python, Git & Git Internals",
   },
   {
-    title: "Mini Rougue Dungeon",
+    title: "Rougue Dungeon",
     description:
-      "A Rougue-like game with comprehensive features including the turn-based fighting system, item buildings, and different monster mechanisms ",
+      "A Rougue-like game with features including the turn-based fighting system, item buildings, and many monster mechanisms ",
     image: minirougue,
     link: "https://github.com/Tristan816la/Mini-Rouge-Dungeon",
     techstack: "C++",
   },
+  {
+    title: "Connection",
+    image: connection,
+    link: "https://features.dailybruin.com/2021/connection/#/",
+    description:
+      "A web page I built at Daily Bruin to showcase UCLA community and experiences under pandemics",
+    techstack: "React, Styled Components",
+  },
 ];
 
 const Project = () => {
+  const { width } = useWindowSize();
   return (
     <ProjectWrapper id="project">
-      <ProjectTitle data-aos="zoom-in">Projects</ProjectTitle>
+      <ProjectTitle data-aos="zoom-in">
+        <BgTag>{"<h2>"}</BgTag>Projects<BgTag2>{"</h2>"}</BgTag2>
+      </ProjectTitle>
       <Cards data-aos="zoom-in">
-        {projects.map((p, i) => (
-          <CardContainer key={i}>
-            <Card>
-              <CardFront>
-                <img src={p.image} alt="twain"></img>
-              </CardFront>
+        {projects.map((p, i) => {
+          if ((width < 800 && i < 6) || width > 800)
+            return (
+              <CardContainer key={i}>
+                <Card>
+                  <CardFront>
+                    <img src={p.image} alt="twain"></img>
+                  </CardFront>
 
-              <CardBack>
-                <h1>{p.title}</h1>
-                <p>
-                  {p.description}
-                  <br />
-                  <br />
-                  <Techstack>{p.techstack}</Techstack>
-                </p>
-                <a href={p.link}>View Project</a>
-              </CardBack>
-            </Card>
-          </CardContainer>
-        ))}
+                  <CardBack>
+                    <h1>{p.title}</h1>
+                    <span>
+                      {p.description}
+                      <br />
+                      <br />
+                      <Techstack>{p.techstack}</Techstack>
+                    </span>
+                    {p.link && <a href={p.link}>View Project</a>}
+                  </CardBack>
+                </Card>
+              </CardContainer>
+            );
+          else {
+            return <Fragment key={i}></Fragment>;
+          }
+        })}
       </Cards>
     </ProjectWrapper>
   );

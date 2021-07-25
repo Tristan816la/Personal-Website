@@ -45,9 +45,9 @@ export const Tiles = styled.div`
   grid-template-columns: repeat(3, 1fr);
   ${mobile} {
     grid-template-columns: repeat(2, 1fr);
-    margin-top: -100px;
+    margin-top: -200px;
     place-items: center;
-    row-gap: 20px;
+    row-gap: 40px;
     width: 100%;
   }
   height: 45%;
@@ -56,8 +56,8 @@ export const Tiles = styled.div`
 
 export const Tiler = styled.div`
   display: flex;
-  width: 200px;
-  height: 80px;
+  width: 180px;
+  height: 65px;
   background-color: ${pink};
   color: ${darkGray};
   font-size: 20px;

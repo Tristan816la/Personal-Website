@@ -1,5 +1,5 @@
 import styled, { css } from "styled-components";
-import chatBg from "../../images/chatbg2.jpg";
+import chatBg from "../../images/chatbg5.jpeg";
 import { fadeIn, flicker, shine, darkGray, mobile } from "../../Style";
 
 export const CoverWrapper = styled.div`
@@ -37,7 +37,6 @@ export const CoverTitle = styled.div`
   font-weight: 700;
   line-height: 50px;
   font-size: 28px;
-  /* margin: 0 auto; */
   margin-top: -50px;
   width: 90%;
   color: #fff;
