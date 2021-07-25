@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.c4d1137a.chunk.css",
-    "main.js": "/static/js/main.9f180d18.chunk.js",
-    "main.js.map": "/static/js/main.9f180d18.chunk.js.map",
+    "main.js": "/static/js/main.ddb0a559.chunk.js",
+    "main.js.map": "/static/js/main.ddb0a559.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.8c44269c.js",
     "runtime-main.js.map": "/static/js/runtime-main.8c44269c.js.map",
     "static/css/2.ec02d681.chunk.css": "/static/css/2.ec02d681.chunk.css",
@@ -13,10 +13,13 @@
     "static/css/main.c4d1137a.chunk.css.map": "/static/css/main.c4d1137a.chunk.css.map",
     "static/js/2.cbe78e87.chunk.js.LICENSE.txt": "/static/js/2.cbe78e87.chunk.js.LICENSE.txt",
     "static/media/bruinshare.fc2409c4.png": "/static/media/bruinshare.fc2409c4.png",
-    "static/media/chatbg2.e6c63905.jpg": "/static/media/chatbg2.e6c63905.jpg",
+    "static/media/chatbg5.db0dfa26.jpeg": "/static/media/chatbg5.db0dfa26.jpeg",
+    "static/media/compined.06a88206.png": "/static/media/compined.06a88206.png",
+    "static/media/connection.62f9bbd4.png": "/static/media/connection.62f9bbd4.png",
     "static/media/contactIcon.4f0131e3.svg": "/static/media/contactIcon.4f0131e3.svg",
     "static/media/cpplogo.aafc57ee.png": "/static/media/cpplogo.aafc57ee.png",
     "static/media/downloadicon.2a5c8749.svg": "/static/media/downloadicon.2a5c8749.svg",
+    "static/media/embark.bf57b76f.png": "/static/media/embark.bf57b76f.png",
     "static/media/gitlogo.9af3ba6d.png": "/static/media/gitlogo.9af3ba6d.png",
     "static/media/hackerhub.286f3551.png": "/static/media/hackerhub.286f3551.png",
     "static/media/homeIcon.55bdf9f8.svg": "/static/media/homeIcon.55bdf9f8.svg",
@@ -26,7 +29,7 @@
     "static/media/projectIcon.0bae172a.svg": "/static/media/projectIcon.0bae172a.svg",
     "static/media/pythonlogo.ad6a38e7.png": "/static/media/pythonlogo.ad6a38e7.png",
     "static/media/reactlogo.27896a27.png": "/static/media/reactlogo.27896a27.png",
-    "static/media/resume.b1e64a20.png": "/static/media/resume.b1e64a20.png",
+    "static/media/resume.60c0c53d.png": "/static/media/resume.60c0c53d.png",
     "static/media/sendIcon.949274d9.svg": "/static/media/sendIcon.949274d9.svg",
     "static/media/stylisticucla.2f98205b.png": "/static/media/stylisticucla.2f98205b.png",
     "static/media/twain.06bf3bb2.jpg": "/static/media/twain.06bf3bb2.jpg"
@@ -36,6 +39,6 @@
     "static/css/2.ec02d681.chunk.css",
     "static/js/2.cbe78e87.chunk.js",
     "static/css/main.c4d1137a.chunk.css",
-    "static/js/main.9f180d18.chunk.js"
+    "static/js/main.ddb0a559.chunk.js"
   ]
 }
