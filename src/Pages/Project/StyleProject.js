@@ -52,7 +52,7 @@ export const Card = styled.div`
 `;
 
 export const CardContainer = styled.div`
-  height: 250px;
+  height: 33vh;
   ${mobile} {
     height: 220px;
     font-size: 10px;

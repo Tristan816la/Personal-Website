@@ -35,7 +35,9 @@ const About = () => {
           <br />
           Passionate learner of philosophy and psychology ending up in CS for
           money but accidentally love it
-          <BgTag mt={15}>{"</section>"}</BgTag>
+          <BgTag mt={15} ml={-15}>
+            {"</section>"}
+          </BgTag>
         </AboutMeDescription>
       </AboutMeFirstCol>
 
