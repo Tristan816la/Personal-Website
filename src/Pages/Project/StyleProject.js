@@ -32,7 +32,6 @@ export const Cards = styled.div`
     place-items: center;
     width: 100%;
   }
-  width: 80%;
 `;
 
 export const Card = styled.div`
@@ -53,7 +52,6 @@ export const Card = styled.div`
 `;
 
 export const CardContainer = styled.div`
-  width: 315px;
   height: 250px;
   ${mobile} {
     height: 220px;
