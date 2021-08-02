@@ -19,6 +19,7 @@ import minirougue from "../../images/minirougue.png";
 import embark from "../../images/embark.png";
 import compined from "../../images/compined.png";
 import connection from "../../images/connection.png";
+import pigz from "../../images/pigz.png";
 import { useWindowSize } from "../../shared/Hook";
 import { BgTag, BgTag2 } from "../../shared/Tag";
 
@@ -56,20 +57,12 @@ const projects = [
     techstack: "MongoDB, Express, React, Node",
   },
   {
-    title: "Stylistic UCLA",
+    title: "JPigz",
+    image: pigz,
+    link: "https://github.com/Tristan816la/Pigzj",
     description:
-      "An AI to combine features of different images and achieve artistic effects",
-    image: stylisticucla,
-    link: "https://github.com/Tristan816la/Neural-Style-Transfer-Stylistic-UCLA",
-    techstack: "Python, Jupyter Notebook, Tensorflow",
-  },
-  {
-    title: "Hackerhub",
-    description:
-      "A fullstack web app serving as a forum for hackers, setting up the frontend and backend through individual efforts",
-    image: hackerhub,
-    link: "https://hackerhub-420f2.web.app/",
-    techstack: "Firebase, Express, React, Node",
+      "A Java implementation of Pigz, a multithreaded compressor (3+ times faster than gzip)",
+    techstack: "Java",
   },
   {
     title: "TopoGit",
@@ -86,6 +79,22 @@ const projects = [
     image: minirougue,
     link: "https://github.com/Tristan816la/Mini-Rouge-Dungeon",
     techstack: "C++",
+  },
+  {
+    title: "Stylistic UCLA",
+    description:
+      "An AI to combine features of different images and achieve artistic effects",
+    image: stylisticucla,
+    link: "https://github.com/Tristan816la/Neural-Style-Transfer-Stylistic-UCLA",
+    techstack: "Python, Jupyter Notebook, Tensorflow",
+  },
+  {
+    title: "Hackerhub",
+    description:
+      "A fullstack web app serving as a forum for hackers, setting up the frontend and backend through individual efforts",
+    image: hackerhub,
+    link: "https://hackerhub-420f2.web.app/",
+    techstack: "Firebase, Express, React, Node",
   },
   {
     title: "Connection",

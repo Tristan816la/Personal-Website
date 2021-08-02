@@ -18,7 +18,7 @@ const Contact = () => {
     <>
       <ContactWrapper id="contact">
         <ContactFirstCol>
-          <a href="Resume.pdf" download>
+          <a href="Resume1.pdf" download>
             <div
               onMouseOver={() => setHover(true)}
               onMouseLeave={() => setHover(false)}
